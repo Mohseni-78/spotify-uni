@@ -78,6 +78,7 @@ const authOption = {
       return refreshAccessToken(token);
     },
   },
+  secret:"test",
   async session({ session, token }) {
     session.user = token.user;
     session.accessToken = token.accessToken;
